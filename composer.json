@@ -1,0 +1,31 @@
+{
+    "name": "moebius/httpclient",
+    "description": "A HTTP client for performing single or multiple simultaneous HTTP requests for PHP.",
+    "type": "library",
+    "require-dev": {
+        "charm/testing": "^0.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Moebius\\Http\\": "src/"
+        },
+        "classmap": ["exceptions.php"]
+    },
+    "authors": [
+        {
+            "name": "Frode Børli",
+            "email": "frode@ennerd.com"
+        }
+    ],
+    "minimum-stability": "RC",
+    "prefer-stable": true,
+    "require": {
+        "moebius/socket": "dev-master",
+        "psr/http-message": "1.0.x-dev",
+        "psr/http-client": "1.0.x-dev",
+        "charm/options": ">=0",
+        "charm/util-url": ">=0",
+        "charm/http": "^1.0"
+    }
+}
